@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className='h-15 flex items-center justify-between p-8'>
       <div className="logo">
-        <h1>LOGO</h1>
+        <img src="../../assets/logo.png" alt="" />
       </div>
       <div className="nav-items">
         <ul className='flex items-center gap-10 text-[18px] font-bold text-gray-800 '>
