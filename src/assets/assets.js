@@ -1,5 +1,5 @@
 import header from './header.jpg'
 
-export const imgages = {
+export const assets = {
   header,
 }
