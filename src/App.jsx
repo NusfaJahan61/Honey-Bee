@@ -1,9 +1,11 @@
+import Navbar from "./pages/Navbar"
+
 function App() {
 
   return (
-    <>
-      <h1>Honey Bee!</h1>
-    </>
+    <div className="w-[80%] m-auto">
+      <Navbar />
+    </div>
   )
 }
 
