@@ -1,4 +1,4 @@
-import header from './header.jpg'
+import header from './header.png'
 import logo from './logo.png'
 
 export const assets = {
