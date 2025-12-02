@@ -29,6 +29,7 @@ const Category = () => {
           <p>Combo</p>
         </div>
       </div>
+      <hr className='text-[#cac7bf] mb-5' />
     </>
   )
 }
