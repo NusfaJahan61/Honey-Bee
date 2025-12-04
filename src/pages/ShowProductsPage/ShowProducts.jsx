@@ -9,7 +9,7 @@ const ShowProducts = () => {
 
   return (
     <>
-      <h1 className=" text-[#775050] mb-5 text-3xl ">All Products</h1>
+      <h1 className=" text-[#775050] mb-5 text-3xl mt-3">All Products</h1>
       <div className="flex flex-wrap justify-between gap-2 ">
         {item_list.map((item, index) => {
           if (category === "All" || category === item.category) {
