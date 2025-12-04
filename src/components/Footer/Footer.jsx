@@ -8,7 +8,7 @@ const Footer = () => {
     <div className=" capitalize bg-[#D69604] flex flex-col  h-120 *:text-black ">
       <div className="w-3/4 m-auto mb-10 mt-20 flex justify-between">
         <div className="">
-          <img className="w-60 -ml-6" src={assets.logo} alt="" />
+          <img className="w-40 " src={assets.logo} alt="" />
           <button className=" px-9 py-2 text-zinc-900 rounded-md my-4 border border-black hover:border-transparent hover:bg-amber-300 active:bg-[#f5df1d] bg-transparent  duration-400 hover:cursor-pointer">send email</button>
           <div className="flex pt-5 gap-5 *:text-4xl *:hover:cursor-pointer">
             <FaFacebook />
@@ -40,9 +40,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="w-3/4 m-auto my-0" />
-      <div className="w-3/4 m-auto my-5  justify-center">
-        <p>Privacy policy All rights reserved.</p>
+      <hr className="w-5/6 m-auto my-0" />
+      <div className="w-3/4 m-auto my-5 text-center">
+        <p>Copyright © 2025 TermsFeed®. All rights reserved.</p>
       </div>
     </div>
   )
