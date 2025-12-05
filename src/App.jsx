@@ -9,12 +9,14 @@ function App() {
   const [showLogin, setShowLogin] = useState(false)
 
   return (
-    <div className="w-[80%] m-auto">
+    <>
       {showLogin === true ? <Login setShowLogin={setShowLogin} /> : <></>}
-      <Navbar setShowLogin={setShowLogin} />
-      <Home />
-      <Footer />
-    </div>
+      <div className="w-[80%] m-auto">
+        <Navbar setShowLogin={setShowLogin} />
+        <Home />
+        <Footer />
+      </div>
+    </>
   )
 }
 
