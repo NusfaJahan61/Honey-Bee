@@ -3,7 +3,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { VscAccount } from "react-icons/vsc";
 import { assets } from '../../assets/assets';
 
-const Navbar = () => {
+const Navbar = ({ setShowLogin }) => {
 
   const [nav, setNav] = useState("Home")
   const [icons, setIcons] = useState("")
@@ -45,8 +45,9 @@ const Navbar = () => {
           <VscAccount />
         </div>
         <div className="account"></div>
-        <button className='bg-amber-400 text-amber-950 border-2 border-amber-400 font-bold px-5 py-1.5 rounded-[25px] text-[18px] cursor-pointer
-        hover:bg-transparent transition duration-200'>Sign in</button>
+        <button onClick={() => setShowLogin(true)}
+          className='bg-amber-400 text-amber-950 border-2 border-amber-400 font-bold px-5 py-1.5 rounded-[25px] text-[18px] cursor-pointer hover:bg-transparent transition duration-200'
+        >Sign in</button>
       </div>
     </div>
   )
