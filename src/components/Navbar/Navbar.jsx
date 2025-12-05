@@ -46,7 +46,7 @@ const Navbar = ({ setShowLogin }) => {
         </div>
         <div className="account"></div>
         <button onClick={() => setShowLogin(true)}
-          className='bg-amber-400 text-amber-950 border-2 border-amber-400 font-bold px-5 py-1.5 rounded-[25px] text-[18px] cursor-pointer hover:bg-transparent transition duration-200'
+          className='bg-amber-400 text-amber-950 border border-amber-400 font-bold px-5 py-1.5 rounded-[25px] text-[18px] cursor-pointer hover:bg-transparent transition duration-200'
         >Sign in</button>
       </div>
     </div>
