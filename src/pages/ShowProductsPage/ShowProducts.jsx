@@ -1,4 +1,3 @@
-import React from 'react'
 import { item_list } from '../../assets/assets'
 import ItemsCard from '../../components/ItemsCard/ItemsCard'
 import { useState } from 'react'

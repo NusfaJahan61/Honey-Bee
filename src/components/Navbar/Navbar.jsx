@@ -19,9 +19,9 @@ const Navbar = ({ setShowLogin, setShowCart }) => {
             className={nav === "Home" ?
               "border-b-2 text-amber-500 transition duration-300" : ""}>Home</li>
 
-          <li onClick={() => { setNav("Order now"); setIcons("") }}
-            className={nav === "Order now" ?
-              "border-b-2 text-amber-500 transition duration-300" : ""}>Order now</li>
+          <li onClick={() => { setNav("Products"); setIcons("") }}
+            className={nav === "Products" ?
+              "border-b-2 text-amber-500 transition duration-300" : ""}>Products</li>
 
           <li onClick={() => { setNav("About"); setIcons("") }}
             className={nav === "About" ?
