@@ -396,5 +396,21 @@ export const item_list = [
     weight: 250,
     description: "Black seed honey – কালোজিরা মধু combines the healing compounds of honey and black nigella seeds. The combination makes black seed honey a powerful medicinal agent for gastrointestinal issues, wound healing, and even, possibly, some major infections.",
     category: "honey"
+  }, {
+    id: "49",
+    name: "Black seed honey ",
+    image: blackSeedHoney250g,
+    price: 450,
+    weight: 250,
+    description: "Black seed honey – কালোজিরা মধু combines the healing compounds of honey and black nigella seeds. The combination makes black seed honey a powerful medicinal agent for gastrointestinal issues, wound healing, and even, possibly, some major infections.",
+    category: "honey"
+  }, {
+    id: "50",
+    name: "Black seed honey ",
+    image: blackSeedHoney250g,
+    price: 450,
+    weight: 250,
+    description: "Black seed honey – কালোজিরা মধু combines the healing compounds of honey and black nigella seeds. The combination makes black seed honey a powerful medicinal agent for gastrointestinal issues, wound healing, and even, possibly, some major infections.",
+    category: "honey"
   },
 ]

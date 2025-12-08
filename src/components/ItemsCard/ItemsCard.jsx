@@ -14,11 +14,11 @@ const ItemsCard = ({ id, name, img, price }) => {
           <p className="text-[19px] text-[#62625e]">Tk  {price}.00</p>
           {
             !cartsItem[id]
-              ? <button onClick={() => addToCart(id)} className="bg-[#f7d31e] text-[20px] text-center px-3.5 py-1 rounded-[50px]">+</button>
-              : <div className="bg-[#f7d31e] flex justify-between text-[20px] text-center gap-5 items-center px-5 py-1 rounded-[50px]">
-                <button onClick={() => removeFromCart(id)}>-</button>
+              ? <button onClick={() => addToCart(id)} className="cursor-pointer bg-[#f7d31e] text-[20px] text-center px-3.5 py-1 rounded-[50px]">+</button>
+              : <div className=" bg-[#f7d31e] flex justify-between text-[20px] text-center gap-5 items-center px-5 py-1 rounded-[50px]">
+                <button className="cursor-pointer " onClick={() => removeFromCart(id)}>-</button>
                 <p className="text-[16px]">{cartsItem[id]}</p>
-                <button onClick={() => addToCart(id)}>+</button>
+                <button className="cursor-pointer" onClick={() => addToCart(id)}>+</button>
               </div>
           }
 
