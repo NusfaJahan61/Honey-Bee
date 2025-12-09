@@ -3,12 +3,16 @@ import logo from './logo.png'
 import nuts from './nuts.jpg'
 import blackSeedHoney250g from './blackSeedHoney250g.jpg'
 import cross_icon from './cross_icon.png'
+import add_icon_green from './add_icon_green.png'
+import remove_icon_red from './remove_icon_red.png'
 
 export const assets = {
   header,
   logo,
   nuts,
-  cross_icon
+  cross_icon,
+  add_icon_green,
+  remove_icon_red,
 }
 
 export const item_list = [
