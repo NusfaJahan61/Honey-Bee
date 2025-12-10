@@ -14,7 +14,7 @@ const Navbar = ({ setShowLogin, setShowCart }) => {
         <img src={assets.logo} alt="logo" />
       </div>
       <div className="nav-items">
-        <ul className='flex items-center gap-10 text-[18px] font-bold text-gray-600 *:cursor-pointer '>
+        <ul className='flex items-center gap-10 text-[18px] text-gray-600 *:cursor-pointer '>
           <li onClick={() => { setNav("Home"); setIcons("") }}
             className={nav === "Home" ?
               "border-b-2 text-amber-500 transition duration-300" : ""}>Home</li>
@@ -31,7 +31,7 @@ const Navbar = ({ setShowLogin, setShowCart }) => {
             " border-b-2 text-amber-500 transition duration-300" : ""}>Contact us</li>
         </ul>
       </div>
-      <div className="login flex items-center gap-4 align-center justify-center *:cursor-pointer">
+      <div className="login flex items-center gap-5 align-center justify-center *:cursor-pointer">
         <div
           onClick={() => { setIcons("Cart"); setNav(""); setShowCart(true) }}
           className={`text-4xl transition duration-300 
@@ -45,7 +45,7 @@ const Navbar = ({ setShowLogin, setShowCart }) => {
           <VscAccount />
         </div>
         <button onClick={() => setShowLogin(true)}
-          className='bg-amber-400 text-amber-950 border border-amber-400 font-bold px-5 py-1.5 rounded-[25px] text-[18px] cursor-pointer hover:bg-transparent transition duration-200'
+          className='bg-amber-400 text-amber-950 border border-amber-400 px-5 py-1.5 rounded-[25px] text-[18px] cursor-pointer hover:bg-transparent transition duration-200'
         >Sign in</button>
       </div>
     </div>

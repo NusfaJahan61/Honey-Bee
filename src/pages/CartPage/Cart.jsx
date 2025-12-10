@@ -9,8 +9,8 @@ const Cart = () => {
   const { cartsItem, addToCart, removeFromCart } = useContext(StoreContext)
 
   return (
-    <div className="w-full h-full my-30 text-[18px]">
-      <h1 className="text-5xl text-amber-950 mb-10 flex gap-5 items-center">
+    <div className="w-full h-full my-30 text-[18px] font-medium">
+      <h1 className="text-5xl mb-10 flex gap-5 items-center">
         <div className="text-7xl">
           <IoCartOutline />
         </div> Shopping Cart</h1>
@@ -73,9 +73,9 @@ const Cart = () => {
                 <p>120/-</p>
               </div>
               <hr className="text-[#c2c2be]" />
-              <div className="flex justify-between text-[18px] font-bold">
+              <div className="flex justify-between font-medium text-[18px] ">
                 <p>Total</p>
-                <p className="text-2xl">1265/-</p>
+                <p className="text-2xl ">1265/-</p>
               </div>
             </div>
             <button className="w-full my-5 px-5 py-2 border rounded-[25px] bg-black text-white text-[18px]  cursor-pointer hover:bg-[#303030]">Proceed to checkout</button>
