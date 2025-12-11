@@ -26,6 +26,7 @@ function App() {
         {showCart === true
           ? <Cart setShowCart={setShowCart} />
           : <Home />}
+
         <Footer />
       </div>
     </>

@@ -3,7 +3,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { VscAccount } from "react-icons/vsc";
 import { assets } from '../../assets/assets';
 
-const Navbar = ({ setShowLogin, setShowCart }) => {
+const Navbar = ({ setShowLogin, setShowCart, setShowContact }) => {
 
   const [nav, setNav] = useState("Home")
   const [icons, setIcons] = useState("")
@@ -27,7 +27,7 @@ const Navbar = ({ setShowLogin, setShowCart }) => {
             className={nav === "About" ?
               "border-b-2 text-amber-500 transition duration-300" : ""}>About</li>
 
-          <li onClick={() => { setNav("Contact us"); setIcons("") }} className={nav === "Contact us" ?
+          <li onClick={() => { setNav("Contact us"); setIcons(""); setShowContact(true) }} className={nav === "Contact us" ?
             " border-b-2 text-amber-500 transition duration-300" : ""}>Contact us</li>
         </ul>
       </div>
