@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { IoCartOutline } from "react-icons/io5";
 import { VscAccount } from "react-icons/vsc";
 import { assets } from '../../assets/assets';
+import { StoreContext } from '../../StoreContext/StoreContext';
 
 const Navbar = ({ setShowLogin, setShowCart, setShowContact }) => {
 
-  const [nav, setNav] = useState("Home")
-  const [icons, setIcons] = useState("")
+  const { nav, setNav } = useContext(StoreContext)
 
   return (
     <div className='h-20 flex items-center justify-between p-8'>
@@ -15,33 +15,33 @@ const Navbar = ({ setShowLogin, setShowCart, setShowContact }) => {
       </div>
       <div className="nav-items">
         <ul className='flex items-center gap-10 text-[18px] text-gray-600 *:cursor-pointer '>
-          <li onClick={() => { setNav("Home"); setIcons("") }}
+          <li onClick={() => setNav("Home")}
             className={nav === "Home" ?
               "border-b-2 text-amber-500 transition duration-300" : ""}>Home</li>
 
-          <li onClick={() => { setNav("Products"); setIcons("") }}
+          <li onClick={() => setNav("Products")}
             className={nav === "Products" ?
               "border-b-2 text-amber-500 transition duration-300" : ""}>Products</li>
 
-          <li onClick={() => { setNav("About"); setIcons("") }}
+          <li onClick={() => setNav("About")}
             className={nav === "About" ?
               "border-b-2 text-amber-500 transition duration-300" : ""}>About</li>
 
-          <li onClick={() => { setNav("Contact us"); setIcons(""); setShowContact(true) }} className={nav === "Contact us" ?
+          <li onClick={() => { setNav("Contact us"); setShowContact(true) }} className={nav === "Contact us" ?
             " border-b-2 text-amber-500 transition duration-300" : ""}>Contact us</li>
         </ul>
       </div>
       <div className="login flex items-center gap-5 align-center justify-center *:cursor-pointer">
         <div
-          onClick={() => { setIcons("Cart"); setNav(""); setShowCart(true) }}
+          onClick={() => { setNav("Cart"); setShowCart(true) }}
           className={`text-4xl transition duration-300 
-          ${icons === "Cart" ? "text-amber-500 " : "text-gray-600"}`} >
+          ${nav === "Cart" ? "text-amber-500 " : "text-gray-600"}`} >
           <IoCartOutline />
         </div>
         <div
-          onClick={() => { setIcons("Account"); setNav("") }}
+          onClick={() => { setNav("Account") }}
           className={`text-3xl transition duration-300 
-          ${icons === "Account" ? "text-amber-500 " : "text-gray-600"}`} >
+          ${nav === "Account" ? "text-amber-500 " : "text-gray-600"}`} >
           <VscAccount />
         </div>
         <button onClick={() => setShowLogin(true)}

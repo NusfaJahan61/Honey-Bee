@@ -5,6 +5,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
 
+  const [nav, setNav] = useState("Home")
   const [cartsItem, setCartsItem] = useState({})
 
   const addToCart = (itemId) => {
@@ -27,6 +28,8 @@ const StoreContextProvider = (props) => {
 
 
   const ContextValue = {
+    nav,
+    setNav,
     cartsItem,
     setCartsItem,
     addToCart,

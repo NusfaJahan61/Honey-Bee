@@ -10,7 +10,7 @@ function App() {
 
   const [showLogin, setShowLogin] = useState(false)
   const [showCart, setShowCart] = useState(false)
-  const [showContact, setShowContact] = useState(true)
+  const [showContact, setShowContact] = useState(false)
 
   return (
     <>
