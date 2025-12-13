@@ -1,6 +1,11 @@
 import header from './header.png'
 import logo from './logo.png'
-import nuts from './nuts.jpg'
+import nuts_category from './nuts_category.jpg'
+import dates_category from './dates_category.jpg'
+import honey_category from './honey_category.jpg'
+import dryFruits_category from './dryFruits_category.jpg'
+import combo_category from './combo_category.jpg'
+import all_category from './all_category.jpg'
 import blackSeedHoney250g from './blackSeedHoney250g.jpg'
 import cross_icon from './cross_icon.png'
 import add_icon_green from './add_icon_green.png'
@@ -9,7 +14,12 @@ import remove_icon_red from './remove_icon_red.png'
 export const assets = {
   header,
   logo,
-  nuts,
+  all_category,
+  nuts_category,
+  dates_category,
+  combo_category,
+  dryFruits_category,
+  honey_category,
   cross_icon,
   add_icon_green,
   remove_icon_red,
