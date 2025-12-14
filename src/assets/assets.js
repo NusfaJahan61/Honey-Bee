@@ -14,16 +14,32 @@ import remove_icon_red from './remove_icon_red.png'
 export const assets = {
   header,
   logo,
-  all_category,
-  nuts_category,
-  dates_category,
-  combo_category,
-  dryFruits_category,
-  honey_category,
   cross_icon,
   add_icon_green,
   remove_icon_red,
 }
+
+export const category_list = [
+  {
+    category_name: "All",
+    icon: all_category,
+  }, {
+    category_name: "Honey",
+    icon: honey_category,
+  }, {
+    category_name: "Nuts",
+    icon: nuts_category,
+  }, {
+    category_name: "Dates",
+    icon: dates_category,
+  }, {
+    category_name: "Dryfruits",
+    icon: dryFruits_category,
+  }, {
+    category_name: "Combo",
+    icon: combo_category,
+  },
+]
 
 export const item_list = [
   {
