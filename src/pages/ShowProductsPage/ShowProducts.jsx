@@ -1,15 +1,16 @@
 import { item_list } from '../../assets/assets'
 import ItemsCard from '../../components/ItemsCard/ItemsCard'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { StoreContext } from '../../StoreContext/StoreContext'
 
 const ShowProducts = () => {
 
-  const [category, setCategory] = useState("All")
+  const { category } = useContext(StoreContext)
 
   return (
     <>
-      <h1 className=" text-[#775050] mb-5 text-3xl mt-3">All Products</h1>
-      <div className="flex flex-wrap justify-between gap-2 ">
+      <h1 className=" text-[#775050] mb-5 text-3xl mt-3">{category === "All" ? "All Products" : <>{category}</>}</h1>
+      <div className={`flex flex-wrap gap-5 ${category === item_list.category ? "justify-start" : "justify-start"}`}>
         {item_list.map((item, index) => {
           if (category === "All" || category === item.category) {
             return (
