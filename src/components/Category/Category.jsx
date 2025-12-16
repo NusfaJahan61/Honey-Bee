@@ -8,8 +8,7 @@ const Category = () => {
 
   return (
     <>
-      <h1 className=" text-[#775050] mt-10  text-3xl">Categories</h1>
-      <div className=" cursor-pointer flex justify-left gap-10 ">
+      <div className=" cursor-pointer flex justify-center gap-10 ">
         {
           category_list.map((catItem, index) => {
             return (

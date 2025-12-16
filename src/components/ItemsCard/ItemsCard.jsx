@@ -7,7 +7,7 @@ const ItemsCard = ({ id, name, img, price }) => {
 
   return (
     <div>
-      <div className="bg-[#F3F0E9] flex flex-col border border-[#f2e8ce] p-5 mb-10 rounded-[10px]">
+      <div className="bg-white flex flex-col border border-[#f2e8ce] p-5 mb-5 rounded-[10px]">
         <img className="w-60 h-60 rounded-[10px]" src={img} alt="image" />
         <h2 className="text-[18px] text-center py-2 text-amber-950">{name}</h2>
         <div className="px-1 flex justify-between items-center ">

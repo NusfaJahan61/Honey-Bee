@@ -8,9 +8,9 @@ const ShowProducts = () => {
   const { category } = useContext(StoreContext)
 
   return (
-    <>
-      <h1 className=" text-[#775050] mb-5 text-3xl mt-3">{category === "All" ? "All Products" : <>{category}</>}</h1>
-      <div className={`flex flex-wrap gap-5 ${category === item_list.category ? "justify-start" : "justify-start"}`}>
+    <div className='bg-[#F3F0E9] rounded-2xl pb-10'>
+      <h1 className=" text-[#775050] text-center py-8 text-3xl">{category === "All" ? "All Products" : <>{category}</>}</h1>
+      <div className={`flex flex-wrap  ${category === item_list.category ? "justify-start" : "justify-evenly"}`}>
         {item_list.map((item, index) => {
           if (category === "All" || category === item.category) {
             return (
@@ -27,9 +27,7 @@ const ShowProducts = () => {
           }
         })}
       </div >
-      <hr className="mb-10 text-[#c7c4be]" />
-
-    </>
+    </div>
   )
 }
 
