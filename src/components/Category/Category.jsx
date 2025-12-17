@@ -8,7 +8,7 @@ const Category = () => {
 
   return (
     <>
-      <div className=" cursor-pointer flex justify-center gap-10 ">
+      <div className=" cursor-pointer flex justify-center gap-10 py-5 ">
         {
           category_list.map((catItem, index) => {
             return (

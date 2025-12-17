@@ -5,6 +5,8 @@ import Home from './pages/HomePage/Home'
 import Login from './pages/LoginPage/Login'
 import Cart from './pages/CartPage/Cart'
 import Contact from './pages/ContactPage/Contact'
+import { Routes, Route } from 'react-router-dom'
+
 
 function App() {
 
@@ -23,10 +25,10 @@ function App() {
       }
       <div className="w-[80%] m-auto">
         <Navbar setShowLogin={setShowLogin} setShowCart={setShowCart} setShowContact={setShowContact} />
-        {showCart === true
-          ? <Cart setShowCart={setShowCart} />
-          : <Home />}
-
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/cart' element={<Cart setShowCart={setShowCart} />} />
+        </Routes>
         <Footer />
       </div>
     </>
