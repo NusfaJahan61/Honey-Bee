@@ -8,7 +8,7 @@ const ShowProducts = () => {
   const { category } = useContext(StoreContext)
 
   return (
-    <div className='bg-[#F3F0E9] rounded-2xl pb-10'>
+    <div id='showProducts' className='bg-[#F3F0E9] rounded-2xl pb-10'>
       <h1 className=" text-[#775050] text-center py-8 text-3xl">{category === "All" ? "All Products" : <>{category}</>}</h1>
       <div className={`flex flex-wrap  ${category === item_list.category ? "justify-start" : "justify-evenly"}`}>
         {item_list.map((item, index) => {

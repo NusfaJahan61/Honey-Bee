@@ -11,7 +11,6 @@ import { Routes, Route } from 'react-router-dom'
 function App() {
 
   const [showLogin, setShowLogin] = useState(false)
-  const [showCart, setShowCart] = useState(false)
   const [showContact, setShowContact] = useState(false)
 
   return (
@@ -23,14 +22,14 @@ function App() {
         ? <Contact setShowContact={setShowContact} />
         : <></>
       }
-      <div className="w-[80%] m-auto">
-        <Navbar setShowLogin={setShowLogin} setShowCart={setShowCart} setShowContact={setShowContact} />
+      <div className="w-[80%] m-auto mb-10">
+        <Navbar setShowLogin={setShowLogin} setShowContact={setShowContact} />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/cart' element={<Cart setShowCart={setShowCart} />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }

@@ -5,7 +5,7 @@ import { assets } from "../../assets/assets";
 
 const Footer = () => {
   return (
-    <div className=" capitalize bg-[#D69604] flex flex-col  h-120 *:text-black ">
+    <div id="footer" className=" capitalize bg-[#D69604] flex flex-col  h-120 *:text-black ">
       <div className="w-3/4 m-auto mb-10 mt-20 flex justify-between">
         <div className="">
           <img className="w-40 " src={assets.logo} alt="" />

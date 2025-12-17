@@ -5,14 +5,14 @@ import { assets } from '../../assets/assets';
 import { StoreContext } from '../../StoreContext/StoreContext';
 import { Link } from 'react-router-dom';
 
-const Navbar = ({ setShowLogin, setShowCart, setShowContact }) => {
+const Navbar = ({ setShowLogin, setShowContact }) => {
 
   const { nav, setNav } = useContext(StoreContext)
 
   return (
     <div className='h-20 flex items-center justify-between p-8'>
       <div className="w-40 px-5">
-        <img src={assets.logo} alt="logo" />
+        <Link to='/'><img src={assets.logo} alt="logo" /></Link>
       </div>
       <div className="nav-items">
         <ul className='flex items-center gap-10 text-[18px] text-gray-600 *:cursor-pointer '>
@@ -20,13 +20,13 @@ const Navbar = ({ setShowLogin, setShowCart, setShowContact }) => {
             className={nav === "Home" ?
               "border-b-2 text-amber-500 transition duration-300" : ""}>Home</li></Link>
 
-          <Link to=''><li onClick={() => setNav("Products")}
+          <a href='#showProducts'><li onClick={() => setNav("Products")}
             className={nav === "Products" ?
-              "border-b-2 text-amber-500 transition duration-300" : ""}>Products</li></Link>
+              "border-b-2 text-amber-500 transition duration-300" : ""}>Products</li></a>
 
-          <Link to=''><li onClick={() => setNav("About")}
+          <a href='#footer'><li onClick={() => setNav("About")}
             className={nav === "About" ?
-              "border-b-2 text-amber-500 transition duration-300" : ""}>About</li></Link>
+              "border-b-2 text-amber-500 transition duration-300" : ""}>About</li></a>
 
           <Link to='/'><li onClick={() => { setNav("Contact us"); setShowContact(true) }} className={nav === "Contact us" ?
             " border-b-2 text-amber-500 transition duration-300" : ""}>Contact us</li></Link>
@@ -34,7 +34,7 @@ const Navbar = ({ setShowLogin, setShowCart, setShowContact }) => {
       </div>
       <div className="login flex items-center gap-5 align-center justify-center *:cursor-pointer">
         <Link to='/cart'><div
-          onClick={() => { setNav("Cart"); setShowCart(true) }}
+          onClick={() => { setNav("Cart") }}
           className={`text-4xl transition duration-300 
           ${nav === "Cart" ? "text-amber-500 " : "text-gray-600"}`} >
           <IoCartOutline />
