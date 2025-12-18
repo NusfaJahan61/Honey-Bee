@@ -31,7 +31,7 @@ const Cart = () => {
                   return (
                     <div className="items-center grid grid-cols-6" key={index}>
                       <div className="flex items-center col-span-2 ">
-                        <img className="size-30 rounded-2xl" src={item.image} alt="" />
+                        <img className="size-25 rounded-2xl p-3" src={item.image} alt="" />
                         <p>{item.name}</p>
                       </div>
                       <p>{item.price}/-</p>

@@ -40,7 +40,7 @@ const Navbar = ({ setShowLogin, setShowContact }) => {
           <IoCartOutline />
         </div></Link>
         <Link to='/'><div
-          onClick={() => { setNav("Account") }}
+          onClick={() => { setNav("Account"); setShowLogin(true) }}
           className={`text-3xl transition duration-300 
           ${nav === "Account" ? "text-amber-500 " : "text-gray-600"}`} >
           <VscAccount />
