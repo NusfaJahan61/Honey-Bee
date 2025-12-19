@@ -3,10 +3,11 @@ import { assets, item_list } from "../../assets/assets";
 import { MdDelete } from "react-icons/md";
 import { StoreContext } from "../../StoreContext/StoreContext";
 import { IoCartOutline } from "react-icons/io5";
+import Checkout from "../../components/Checkout/Checkout";
 
 const Cart = () => {
 
-  const { cartsItem, addToCart, removeFromCart } = useContext(StoreContext)
+  const { cartsItem, addToCart, removeFromCart, checkout, setCheckout } = useContext(StoreContext)
 
   return (
     <div className="w-full h-full my-30 text-[18px] font-medium">
@@ -78,10 +79,14 @@ const Cart = () => {
                 <p className="text-2xl ">1265/-</p>
               </div>
             </div>
-            <button className="w-full my-5 px-5 py-2 border rounded-[25px] bg-black text-white text-[18px]  cursor-pointer hover:bg-[#303030]">Proceed to checkout</button>
+            <button onClick={() => setCheckout(true)} className="w-full my-5 px-5 py-2 border rounded-[25px] bg-black text-white text-[18px]  cursor-pointer hover:bg-[#303030]">Proceed to checkout</button>
           </div>
         </div>
       </div>
+      {
+        checkout === true ?
+          <Checkout /> : <></>
+      }
     </div>
   )
 }
