@@ -9,13 +9,14 @@ import { Routes, Route } from 'react-router-dom'
 import { StoreContext } from './StoreContext/StoreContext'
 import Checkout from './components/Checkout/Checkout'
 import Description from './components/Description/Description'
-
+import { item_list } from './assets/assets'
 
 function App() {
 
+  const { checkout } = useContext(StoreContext)
+
   const [showLogin, setShowLogin] = useState(false)
   const [showContact, setShowContact] = useState(false)
-  const { checkout } = useContext(StoreContext)
   return (
     <>
       {showLogin === true
@@ -35,7 +36,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
         </Routes>
       </div>
-      <Description />
+
       <Footer />
     </>
   )
