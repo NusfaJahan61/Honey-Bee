@@ -10,7 +10,7 @@ const Cart = () => {
   const { cartsItem, addToCart, removeFromCart, checkout, setCheckout } = useContext(StoreContext)
 
   return (
-    <div className="w-full h-full my-30 text-[18px] font-medium">
+    <div className=" w-full h-full my-30 text-[18px] font-medium">
       <h1 className="text-5xl mb-10 flex gap-5 items-center">
         <div className="text-7xl">
           <IoCartOutline />
@@ -83,10 +83,6 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      {
-        checkout === true ?
-          <Checkout /> : <></>
-      }
     </div>
   )
 }

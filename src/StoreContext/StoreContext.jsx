@@ -8,6 +8,7 @@ const StoreContextProvider = (props) => {
   const [nav, setNav] = useState("Home")
   const [category, setCategory] = useState("All")
   const [checkout, setCheckout] = useState(false)
+  const [description, setDescription] = useState("")
   const [cartsItem, setCartsItem] = useState({})
 
   const addToCart = (itemId) => {
@@ -44,6 +45,8 @@ const StoreContextProvider = (props) => {
     setCartsItem,
     checkout,
     setCheckout,
+    description,
+    setDescription,
   }
   return (
     <StoreContext.Provider value={ContextValue} >{

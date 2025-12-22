@@ -3,12 +3,12 @@ import { StoreContext } from "../../StoreContext/StoreContext"
 
 const ItemsCard = ({ id, name, img, price }) => {
 
-  const { cartsItem, addToCart, removeFromCart } = useContext(StoreContext)
+  const { cartsItem, addToCart, removeFromCart, setDescription } = useContext(StoreContext)
 
   return (
     <div>
       <div className="bg-white flex flex-col border border-[#f2e8ce] p-5 mb-5 rounded-[10px]">
-        <img className="w-60 h-60 rounded-[10px]" src={img} alt="image" />
+        <img onClick={() => setDescription(name)} className="w-60 h-60 rounded-[10px]" src={img} alt="image" />
         <h2 className="text-[18px] text-center py-2 text-amber-950">{name}</h2>
         <div className="px-1 flex justify-between items-center ">
           <p className="text-[19px] text-[#62625e]">Tk  {price}.00</p>
