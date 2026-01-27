@@ -114,7 +114,7 @@ export const item_list = [
     category: "Honey"
   }, {
     id: "2",
-    name: "Mustard flower honey",
+    name: "Pistachio with shells",
     image: nuts1,
     price: 450,
     weight: 250,

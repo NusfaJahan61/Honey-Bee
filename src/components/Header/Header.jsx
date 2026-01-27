@@ -9,7 +9,7 @@ const Header = () => {
         <button className=' cursor-pointer rounded-[25px] border border-amber-950 bg-amber-950 outline-0 text-[#F3F0E9] py-2 px-5 text-[20px] transition duration-400
          hover:text-amber-950 hover:bg-transparent '>Order now</button>
       </div>
-      <div className="w-full hover:scale-[1.05] m-auto mr-[7%] transition duration-1000 cursor-pointer">
+      <div className="w-full m-auto mr-[7%] transition duration-1000 cursor-pointer">
         <img src={assets.header} alt="" />
       </div>
     </div>

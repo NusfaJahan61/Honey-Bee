@@ -12,7 +12,7 @@ const Category = () => {
         {
           category_list.map((catItem, index) => {
             return (
-              <div onClick={() => setCategory(catItem.category_name)} key={index} className={`flex justify-between gap-5 bg-[#F3F0E9] border-4 items-center px-10 py-2 my-5 rounded-[50px] text-black text-[20px] ${category === catItem.category_name ? "border-amber-400" : "border-transparent"}`} >
+              <div onClick={() => setCategory(catItem.category_name)} key={index} className={`category ${category === catItem.category_name ? "border-amber-400" : "border-transparent"}`} >
                 <img src={catItem.icon} className='-ml-7 rounded-[50px] w-15 h-15' alt="combo" />
                 <p>{catItem.category_name}</p>
               </div>

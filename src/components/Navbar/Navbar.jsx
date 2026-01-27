@@ -20,13 +20,11 @@ const Navbar = ({ setShowLogin, setShowContact }) => {
             className={nav === "Home" ?
               "border-b-2 text-amber-500 transition duration-300" : ""}>Home</li></Link>
 
-          <a href='#showProducts'><li onClick={() => setNav("Products")}
-            className={nav === "Products" ?
-              "border-b-2 text-amber-500 transition duration-300" : ""}>Products</li></a>
+          <a href='#showProducts'><li onClick={() => { setNav("Products"); setNav("Home") }}
+          >Products</li></a>
 
-          <a href='#footer'><li onClick={() => setNav("About")}
-            className={nav === "About" ?
-              "border-b-2 text-amber-500 transition duration-300" : ""}>About</li></a>
+          <a href='#footer'><li onClick={() => { setNav("About"); setNav("Home") }}
+          >About</li></a>
 
           <Link to='/'><li onClick={() => { setNav("Contact us"); setShowContact(true) }} className={nav === "Contact us" ?
             " border-b-2 text-amber-500 transition duration-300" : ""}>Contact us</li></Link>
