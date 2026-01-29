@@ -9,7 +9,7 @@ const Login = ({ setShowLogin }) => {
   const { setNav } = useContext(StoreContext)
 
   return (
-    <div className="absolute z-1 h-full w-full bg-[#00000090]">
+    <div className="modal-overlay">
       <form className={`bg-[#F3F0E9] w-[30%] ${currState === "Sign up" ? 'h-[55%]' : "h-[50%]"} m-auto mt-[10%] p-10 rounded-2xl`} action="">
         <img className="ml-[95%] cursor-pointer" onClick={() => { setShowLogin(false); setNav("Home") }} src={assets.cross_icon} alt="cross" />
         <h1 className="text-3xl text-amber-950 text-center">{currState}</h1>

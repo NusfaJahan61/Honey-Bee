@@ -7,7 +7,7 @@ const Checkout = () => {
   const { setCheckout } = useContext(StoreContext)
 
   return (
-    <div className='absolute z-1 bg-[#00000086] w-full h-full'>
+    <div className='modal-overlay'>
       <div className="bg-white m-auto mt-25 w-3/6 h-5/7 p-10 rounded-2xl">
         <img onClick={() => setCheckout(false)} src={assets.cross_icon} alt="cut" />
         <div className="text-center">

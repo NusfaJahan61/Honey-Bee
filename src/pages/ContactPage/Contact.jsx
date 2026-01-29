@@ -10,7 +10,7 @@ const Contact = ({ setShowContact }) => {
   const { setNav } = useContext(StoreContext)
 
   return (
-    <div className="absolute z-1 w-full h-full bg-[#00000090]">
+    <div className="modal-overlay">
       <div className="flex w-[70%] m-auto mt-[5%] bg-[#F3F0E9] p-10 rounded-2xl justify-between" >
         <div className="w-1/2 ml-10 my-10">
           <h1 className="text-7xl pb-10">Get in Touch</h1>

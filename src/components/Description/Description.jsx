@@ -11,8 +11,8 @@ const Description = () => {
         item_list.map((item, index) => {
           if (description === item.name) {
             return (
-              <div className="absolute z-1 bg-fixed bg-[#00000086] w-[80%] h-full" key={index}>
-                <div className="bg-white m-auto mt-25 w-3/6 h-5/7 p-10 rounded-2xl">
+              <div className="modal-overlay" key={index}>
+                <div className="bg-white m-auto mt-25 w-1/2 h-5/7 p-10 rounded-2xl">
                   <img onClick={() => { setDescription(""); setShowDesc(false) }} src={assets.cross_icon} alt="close" />
                   <div className="">
                     <div className="">
