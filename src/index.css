@@ -32,3 +32,8 @@
   align-items: center;
   z-index: 1000;
 }
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}

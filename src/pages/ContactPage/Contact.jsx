@@ -7,7 +7,9 @@ import { StoreContext } from "../../StoreContext/StoreContext";
 
 const Contact = ({ setShowContact }) => {
 
-  const { setNav } = useContext(StoreContext)
+  const { setNav, enableScroll, disableScroll } = useContext(StoreContext)
+
+  disableScroll();
 
   return (
     <div className="modal-overlay">
@@ -63,7 +65,7 @@ const Contact = ({ setShowContact }) => {
           <button className="rounded-[25px] bg-black py-3 px-10 w-full text-white text-[18px] hover:bg-[#2b2929] transition duration-200 cursor-pointer">Send Message</button>
         </form>
         <img src={assets.cross_icon}
-          onClick={() => { setShowContact(false); setNav("Home") }}
+          onClick={() => { setShowContact(false); setNav("Home"); enableScroll() }}
           className="-mr-2 -mt-2 size-8 bg-[#afaeae57] rounded-[25px] p-2 cursor-pointer"
           alt="cross" />
       </div>

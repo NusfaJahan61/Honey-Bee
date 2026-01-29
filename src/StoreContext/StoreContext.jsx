@@ -26,6 +26,13 @@ const StoreContextProvider = (props) => {
     setCartsItem((prev) => ({ ...prev, [itemId]: prev[itemId] -= 1 }))
   }
 
+  function disableScroll() {
+    document.body.classList.add("no-scroll");
+  }
+  function enableScroll() {
+    document.body.classList.remove("no-scroll");
+  }
+
   const totalCartAmount = () => {
     const total = 0
 
@@ -37,6 +44,8 @@ const StoreContextProvider = (props) => {
     // Functions
     addToCart,
     removeFromCart,
+    disableScroll,
+    enableScroll,
 
     // States
     nav,
@@ -51,6 +60,7 @@ const StoreContextProvider = (props) => {
     setDescription,
     showDesc,
     setShowDesc,
+
   }
   return (
     <StoreContext.Provider value={ContextValue} >{

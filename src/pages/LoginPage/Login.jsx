@@ -6,12 +6,13 @@ import { StoreContext } from "../../StoreContext/StoreContext";
 const Login = ({ setShowLogin }) => {
 
   const [currState, setCurrState] = useState("Sign up")
-  const { setNav } = useContext(StoreContext)
+  const { setNav, enableScroll, disableScroll } = useContext(StoreContext)
+  disableScroll();
 
   return (
     <div className="modal-overlay">
       <form className={`bg-[#F3F0E9] w-[30%] ${currState === "Sign up" ? 'h-[55%]' : "h-[50%]"} m-auto mt-[10%] p-10 rounded-2xl`} action="">
-        <img className="ml-[95%] cursor-pointer" onClick={() => { setShowLogin(false); setNav("Home") }} src={assets.cross_icon} alt="cross" />
+        <img className="ml-[95%] cursor-pointer" onClick={() => { setShowLogin(false); setNav("Home"); enableScroll() }} src={assets.cross_icon} alt="cross" />
         <h1 className="text-3xl text-amber-950 text-center">{currState}</h1>
         <div className="flex flex-col gap-5 py-5">
           {currState === "Sign up"
@@ -22,7 +23,7 @@ const Login = ({ setShowLogin }) => {
           <input className="login-inp" type="password" placeholder="Password" required />
         </div>
         <div className=" flex gap-3 mb-3 text-[#484847]">
-          <input className="cursor-pointer" type="checkbox" required />
+          <input className="cursor-pointer accent-amber-400" type="checkbox" required />
           <p>By continuing, I agree to the terms of use & privacy policy.</p>
         </div>
         <button className="login-btn">{currState}</button>

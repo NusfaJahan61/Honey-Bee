@@ -4,7 +4,10 @@ import { assets } from "../../assets/assets"
 import { StoreContext } from "../../StoreContext/StoreContext"
 
 const Description = () => {
-  const { description, setDescription, setShowDesc } = useContext(StoreContext)
+
+  const { description, setDescription, setShowDesc, enableScroll, disableScroll } = useContext(StoreContext)
+  disableScroll();
+
   return (
     <div>
       {
@@ -13,7 +16,7 @@ const Description = () => {
             return (
               <div className="modal-overlay" key={index}>
                 <div className="bg-white m-auto mt-25 w-1/2 h-5/7 p-10 rounded-2xl">
-                  <img onClick={() => { setDescription(""); setShowDesc(false) }} src={assets.cross_icon} alt="close" />
+                  <img onClick={() => { setDescription(""); setShowDesc(false); enableScroll() }} src={assets.cross_icon} alt="close" />
                   <div className="">
                     <div className="">
                       <img className="w-100 h-100" src={item.image} alt="product image" />
