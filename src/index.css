@@ -18,7 +18,7 @@
   }
 
   .amount-btn {
-    @apply h-10 w-20 border-2 border-[#847975] text-[18px] rounded-[10px] flex justify-center items-center cursor-pointer hover:border-amber-400 hover:text-[22px] transition duration-300;
+    @apply h-10 w-25 border-1 border-[#847975] text-[18px] rounded-[10px] flex justify-center items-center cursor-pointer hover:border-amber-400 hover:bg-amber-400 transition duration-400;
   }
 }
 
@@ -44,4 +44,9 @@
 .no-scroll {
   overflow: hidden;
   height: 100%;
+}
+
+.scrollbar {
+  overflow: scroll;
+  scrollbar-width: none;
 }

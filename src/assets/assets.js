@@ -118,7 +118,7 @@ export const item_list = [
     image: nuts1,
     price: 450,
     weight: 250,
-    description: "Mustard flower honey – সরিষা ফুলের মধু offers benefits such as boosting immunity, aiding digestion, and soothing respiratory issues due to its antioxidant and antibacterial properties. It is also used for skin and hair health and can help relieve symptoms of colds and coughs. The honey's warming properties may support metabolism and detoxification.",
+    description: "Nutritional Profile & Uses Nutrients: Packed with protein, healthy fats (monounsaturated), fiber, potassium, vitamin B6, and antioxidants. Benefits: Supports heart health, blood sugar control, and weight management. Uses: Commonly eaten roasted and salted, used in ice cream, baklava, Middle Eastern dishes, and baking. ",
     category: "Nuts"
   }, {
     id: "3",
@@ -130,11 +130,11 @@ export const item_list = [
     category: "Dates"
   }, {
     id: "4",
-    name: "Fresh Raisins 250g ",
+    name: "Dried strawberries",
     image: driedFruit1,
     price: 450,
     weight: 250,
-    description: "Black seed honey – কালোজিরা মধু combines the healing compounds of honey and black nigella seeds. The combination makes black seed honey a powerful medicinal agent for gastrointestinal issues, wound healing, and even, possibly, some major infections.",
+    description: "Dried strawberries are a nutrient-dense, portable snack packed with antioxidants, fiber, and Vitamin C, offering anti-inflammatory properties, improved heart health, and boosted immunity. They support digestion, skin health, and provide a healthy energy boost, making them a nutritious, low-calorie alternative to candy when unsweetened. ",
     category: "Dryfruits"
   }, {
     id: "5",
@@ -170,11 +170,11 @@ export const item_list = [
     category: "Dates"
   }, {
     id: "9",
-    name: "Black seed honey ",
+    name: "Dried Pineapple",
     image: driedFruit2,
     price: 450,
     weight: 250,
-    description: "Black seed honey – কালোজিরা মধু combines the healing compounds of honey and black nigella seeds. The combination makes black seed honey a powerful medicinal agent for gastrointestinal issues, wound healing, and even, possibly, some major infections.",
+    description: "Dried pineapple offers a concentrated source of immune-boosting vitamin C, digestive-aiding bromelain, fiber, and antioxidants while providing quick energy. It helps reduce inflammation, supports bone health, and acts as a satisfying, fat-free snack, though it is high in sugar and calories, requiring moderate consumption. ",
     category: "Dryfruits"
   }, {
     id: "10",
@@ -210,11 +210,11 @@ export const item_list = [
     category: "Dates"
   }, {
     id: "14",
-    name: "Black seed honey ",
+    name: "Dried apples (Green)",
     image: driedFruit3,
     price: 450,
     weight: 250,
-    description: "Black seed honey – কালোজিরা মধু combines the healing compounds of honey and black nigella seeds. The combination makes black seed honey a powerful medicinal agent for gastrointestinal issues, wound healing, and even, possibly, some major infections.",
+    description: "Dried apples are a nutrient-dense, fiber-rich snack that boosts digestion, supports heart health, and provides sustained energy without spiking blood sugar. Packed with antioxidants, vitamins, and minerals, they help strengthen immunity, reduce inflammation, and aid in weight control. They are a convenient, healthy alternative to sugary treats. ",
     category: "Dryfruits"
   }, {
     id: "15",
@@ -250,11 +250,11 @@ export const item_list = [
     category: "Dates"
   }, {
     id: "19",
-    name: "Black seed honey ",
+    name: "Dried apples (Red)",
     image: driedFruit4,
     price: 450,
     weight: 250,
-    description: "Black seed honey – কালোজিরা মধু combines the healing compounds of honey and black nigella seeds. The combination makes black seed honey a powerful medicinal agent for gastrointestinal issues, wound healing, and even, possibly, some major infections.",
+    description: "Dried apples are a nutrient-dense, fiber-rich snack that boosts digestion, supports heart health, and provides sustained energy without spiking blood sugar. Packed with antioxidants, vitamins, and minerals, they help strengthen immunity, reduce inflammation, and aid in weight control. They are a convenient, healthy alternative to sugary treats. ",
     category: "Dryfruits"
   }, {
     id: "20",
@@ -290,11 +290,11 @@ export const item_list = [
     category: "Dates"
   }, {
     id: "24",
-    name: "Black seed honey ",
+    name: "Dried kiwi ",
     image: driedFruit5,
     price: 450,
     weight: 250,
-    description: "Black seed honey – কালোজিরা মধু combines the healing compounds of honey and black nigella seeds. The combination makes black seed honey a powerful medicinal agent for gastrointestinal issues, wound healing, and even, possibly, some major infections.",
+    description: "Dried kiwi is a nutrient-dense, portable snack packed with vitamin C, fiber, potassium, and antioxidants (vitamins E, K), which boost immunity, support heart health, aid digestion, and promote skin glow. It helps regulate blood pressure, improve vision, and provides a quick energy boost, though it should be eaten in moderation. ",
     category: "Dryfruits"
   }, {
     id: "25",
