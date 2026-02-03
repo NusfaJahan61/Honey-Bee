@@ -9,10 +9,7 @@ import all_category from './all_category.jpg'
 import cross_icon from './cross_icon.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
-import cashews from './cashews.jpg'
-import almond from './almond.jpg'
-import apricot from './apricot.jpg'
-import pineNuts from './pineNuts.jpg'
+import BeeKeepers from './BeeKeepers.jpg'
 
 // Nuts image:
 import nuts1 from './nuts1.jpg'
@@ -79,6 +76,7 @@ export const assets = {
   cross_icon,
   add_icon_green,
   remove_icon_red,
+  BeeKeepers,
 }
 
 export const category_list = [
