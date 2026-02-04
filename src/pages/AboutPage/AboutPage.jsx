@@ -2,51 +2,51 @@ import { assets } from "../../assets/assets"
 
 const AboutPage = () => {
   return (
-    <section class="bg-white py-28">
-      <div class="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-28">
+      <div className=" mx-auto px-6">
 
         {/* <!-- Our Story --> */}
-        <div class="grid lg:grid-cols-2 gap-20 items-center mb-32">
+        <div className="grid lg:grid-cols-2 gap-20 items-center mb-32">
 
           {/* <!-- Image --> */}
-          <div class="relative">
-            <div class="absolute inset-0 bg-[#F3F0E9] rounded-[2.5rem] -rotate-2"></div>
+          <div className="relative">
+            <div className="absolute inset-0 bg-[#F3F0E9] rounded-[2.5rem] -rotate-3"></div>
 
             <img
               src={assets.BeeKeepers}
               alt="Our beekeeping story"
-              class="relative w-full h-130 object-cover rounded-[2.5rem] shadow-xl"
+              className="relative w-full h-130 object-cover rounded-[2.5rem] shadow-xl"
             />
 
             {/* <!-- Tag --> */}
-            <span class="absolute bottom-6 left-6 bg-white px-5 py-2 text-sm tracking-wide text-amber-500 rounded-full shadow">
+            <span className="absolute bottom-6 left-6 bg-white px-5 py-2 text-sm tracking-wide text-amber-500 rounded-full shadow">
               Ethical Beekeeping
             </span>
           </div>
 
           {/* <!-- Text --> */}
           <div>
-            <p class="text-amber-500 uppercase tracking-[0.25em] text-xs mb-5">
+            <p className="text-amber-500 uppercase tracking-[0.25em] text-xs mb-5">
               Our Story
             </p>
 
-            <h2 class="text-4xl lg:text-5xl font-serif text-gray-900 leading-tight mb-8">
+            <h2 className="text-4xl lg:text-5xl font-serif text-gray-900 leading-tight mb-8">
               From Hive to Heart
             </h2>
 
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               We believe honey should remain untouched, honest, and alive —
               just as nature creates it. Our beekeeping practices are rooted
               in sustainability, patience, and deep respect for our bees.
             </p>
 
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               By avoiding over-processing, we preserve the honey’s natural
               enzymes, nutrients, and aroma — delivering purity you can
               taste in every spoonful.
             </p>
 
-            <p class="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed">
               This is not mass production. This is craftsmanship —
               harvested gently and shared with intention.
             </p>
@@ -55,58 +55,101 @@ const AboutPage = () => {
         </div>
 
         {/* <!-- Values --> */}
-        <div class="bg-[#F3F0E9] rounded-[3rem] px-10 py-20">
-          <p class="text-center text-amber-500 uppercase tracking-[0.25em] text-xs mb-4">
-            Our Values
-          </p>
+        {/* <!-- Values --> */}
+        <div class="mt-40">
 
-          <h3 class="text-center text-3xl font-serif text-gray-900 mb-16">
-            Rooted in Care & Integrity
-          </h3>
+          {/* <!-- Section Header --> */}
+          <div class="text-center max-w-3xl mx-auto mb-24">
+            <p class="text-amber-500 uppercase tracking-[0.3em] text-xs mb-5">
+              Our Values
+            </p>
 
-          <div class="grid md:grid-cols-3 gap-14">
+            <h3 class="text-4xl lg:text-5xl font-serif text-gray-900 leading-tight mb-6">
+              Guided by Nature,<br />
+              Driven by Purpose
+            </h3>
 
-            {/* <!-- Value --> */}
-            <div class="bg-white rounded-3xl p-10 text-center shadow-sm">
-              <div class="w-14 h-14 mx-auto mb-6 rounded-full bg-[#F3F0E9] flex items-center justify-center text-amber-500 text-xl">
-                🌿
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Everything we do is rooted in respect — for our bees, our land,
+              and the people who welcome our honey into their homes.
+            </p>
+          </div>
+
+
+          {/* <!-- Value Items --> */}
+          <div class="space-y-28">
+
+            {/* <!-- Value 1 --> */}
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+              <div>
+                <span class="text-7xl font-serif text-[#FEAA29] block mb-6">01</span>
+
+                <h4 class="text-3xl font-serif text-gray-900 mb-5">
+                  Sustainability First
+                </h4>
+                <div className="max-w-xl text-lg text-gray-700 leading-relaxed ">
+                  <p class=" ">
+                    We work in harmony with nature, never exploiting our bees or
+                    their environment. Our practices protect ecosystems and ensure
+                    future generations can thrive.
+                  </p>
+                  <p>Every jar of our honey tells a story of patience and purity. We never rush the process, never dilute the richness, and never compromise the natural character of our harvest. What reaches you is untouched by unnecessary heat or chemicals.</p>
+                </div>
               </div>
-              <h4 class="text-xl font-medium text-gray-900 mb-3">
-                Sustainable Practices
-              </h4>
-              <p class="text-gray-600 leading-relaxed">
-                Our methods protect bees, support biodiversity,
-                and respect the natural rhythm of the land.
-              </p>
+
+              <img className="h-100 w-178 rounded-3xl bg-[#F3F0E9] flex items-center justify-center" src={assets.beeKeeping} alt="beeKeeping" />
+
+
             </div>
 
-            <div class="bg-white rounded-3xl p-10 text-center shadow-sm">
-              <div class="w-14 h-14 mx-auto mb-6 rounded-full bg-[#F3F0E9] flex items-center justify-center text-amber-500 text-xl">
-                🍯
+
+            {/* <!-- Value 2 --> */}
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+              <div class="lg:order-2">
+                <span class="text-7xl font-serif text-[#FEAA29] block mb-6">02</span>
+
+                <h4 class="text-3xl font-serif text-gray-900 mb-5">
+                  Pure in Every Drop
+                </h4>
+
+                <p class="text-lg text-gray-700 leading-relaxed max-w-xl">
+                  Our honey is never diluted, overheated, or altered.
+                  What you taste is exactly what our bees created —
+                  rich, raw, and full of life.
+
+                </p>
               </div>
-              <h4 class="text-xl font-medium text-gray-900 mb-3">
-                Pure, Raw Honey
-              </h4>
-              <p class="text-gray-600 leading-relaxed">
-                Free from additives and heat processing —
-                just honey in its most natural form.
-              </p>
+
+              <img className="h-100 w-178 rounded-3xl bg-[#F3F0E9] flex items-center justify-center" src={assets.honeyDrop} alt="beeKeeping" />
+
             </div>
 
-            <div class="bg-white rounded-3xl p-10 text-center shadow-sm">
-              <div class="w-14 h-14 mx-auto mb-6 rounded-full bg-[#F3F0E9] flex items-center justify-center text-amber-500 text-xl">
-                🤍
+
+            {/* <!-- Value 3 --> */}
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+              <div>
+                <span class="text-7xl font-serif text-[#FEAA29] block mb-6">03</span>
+
+                <h4 class="text-3xl font-serif text-gray-900 mb-5">
+                  Trust & Transparency
+                </h4>
+
+                <p class="text-lg text-gray-700 leading-relaxed max-w-xl">
+                  From hive management to final packaging, we remain open,
+                  honest, and accountable — building relationships based on
+                  integrity and respect.
+                </p>
               </div>
-              <h4 class="text-xl font-medium text-gray-900 mb-3">
-                Passion & Trust
-              </h4>
-              <p class="text-gray-600 leading-relaxed">
-                We stand behind every jar, honoring our craft
-                and the people who choose us.
-              </p>
+
+              <img className="h-100 w-178 rounded-3xl bg-[#F3F0E9] flex items-center justify-center" src={assets.honeyComb} alt="beeKeeping" />
+
             </div>
 
           </div>
+
         </div>
 
       </div>
