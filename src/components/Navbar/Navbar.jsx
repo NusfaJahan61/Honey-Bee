@@ -10,7 +10,7 @@ const Navbar = ({ setShowLogin, setShowContact }) => {
   const { nav, setNav } = useContext(StoreContext)
 
   return (
-    <div className='h-20 flex items-center justify-between p-8shadow-md'>
+    <div className='h-20 flex items-center justify-between p-8 '>
       <div className="w-40 px-5">
         <Link to='/'><img src={assets.logo} alt="logo" /></Link>
       </div>
@@ -20,14 +20,15 @@ const Navbar = ({ setShowLogin, setShowContact }) => {
             className={nav === "Home" ?
               "border-b-2 text-amber-500 transition duration-300" : ""}>Home</li></Link>
 
-          <a href='#showProducts'><li onClick={() => { setNav("Products"); setNav("Home") }}
-          >Products</li></a>
+          <Link to="/products" ><li onClick={() => setNav("Products")} className={nav === "Products" ?
+            " border-b-2 text-amber-500 transition duration-300" : ""}
+          >Products</li></Link>
 
           <Link to="/about_us"><li onClick={() => { setNav("About") }} className={nav === "About" ?
             " border-b-2 text-amber-500 transition duration-300" : ""}
           >About</li></Link>
 
-          <Link to='/'><li onClick={() => { setNav("Contact us"); setShowContact(true) }} className={nav === "Contact us" ?
+          <Link to="/contact_us"><li onClick={() => { setNav("Contact us"); setShowContact(true) }} className={nav === "Contact us" ?
             " border-b-2 text-amber-500 transition duration-300" : ""}>Contact us</li></Link>
         </ul>
       </div>
@@ -38,8 +39,8 @@ const Navbar = ({ setShowLogin, setShowContact }) => {
           ${nav === "Cart" ? "text-amber-500 " : "text-gray-600"}`} >
           <IoCartOutline />
         </div></Link>
-        <Link to='/'><div
-          onClick={() => { setNav("Account"); setShowLogin(true) }}
+        <Link to='/account'><div
+          onClick={() => setNav("Account")}
           className={`text-3xl transition duration-300 
           ${nav === "Account" ? "text-amber-500 " : "text-gray-600"}`} >
           <VscAccount />
