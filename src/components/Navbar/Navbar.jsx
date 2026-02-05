@@ -10,7 +10,7 @@ const Navbar = ({ setShowLogin, setShowContact }) => {
   const { nav, setNav } = useContext(StoreContext)
 
   return (
-    <div className='h-20 flex items-center justify-between p-8'>
+    <div className='h-20 flex items-center justify-between p-8shadow-md'>
       <div className="w-40 px-5">
         <Link to='/'><img src={assets.logo} alt="logo" /></Link>
       </div>
