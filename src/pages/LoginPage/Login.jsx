@@ -12,7 +12,7 @@ const Login = ({ setShowLogin }) => {
   return (
     <div className="modal-overlay">
       <form className={`bg-[#F3F0E9] w-[30%] ${currState === "Sign up" ? 'h-[55%]' : "h-[50%]"} m-auto mt-[10%] p-10 rounded-2xl`} action="">
-        <img className="ml-[95%] cursor-pointer" onClick={() => { setShowLogin(false); setNav("Home"); enableScroll() }} src={assets.cross_icon} alt="cross" />
+        <img className="ml-[95%] cursor-pointer" onClick={() => { setShowLogin(false); enableScroll() }} src={assets.cross_icon} alt="cross" />
         <h1 className="text-3xl text-amber-950 text-center">{currState}</h1>
         <div className="flex flex-col gap-5 py-5">
           {currState === "Sign up"

@@ -45,22 +45,22 @@ const Description = () => {
                           </p>
                         </div>
                         <div className="mt-2">
-                          <p className="flex items-center gap-2 text-[18px]">
-                            <div className="text-2xl text-amber-900">
+                          <h2 className="flex items-center gap-2 text-[18px]">
+                            <p className="text-2xl text-amber-900">
                               <BsTruck />
-                            </div>Delivery charge   ৳80</p>
+                            </p>Delivery charge   ৳80</h2>
                         </div>
                         <div className="mt-2">
-                          <p className="flex items-center gap-2 text-[18px]">
-                            <div className="text-2xl text-amber-900">
+                          <h2 className="flex items-center gap-2 text-[18px]">
+                            <p className="text-2xl text-amber-900">
                               <SlCalender />
-                            </div>Delivery in 2-4 days</p>
+                            </p>Delivery in 2-4 days</h2>
                         </div>
                         <div className="mt-2">
-                          <p className="flex items-center gap-2 text-[18px]">
-                            <div className="text-2xl text-green-600">
+                          <h2 className="flex items-center gap-2 text-[18px]">
+                            <p className="text-2xl text-green-600">
                               <MdVerified />
-                            </div>Available in Stock</p>
+                            </p>Available in Stock</h2>
                         </div>
                       </div>
                       <button className="bg-[#FFB900] text-[18px] text-black px-10 py-3 rounded-full my-5 w-full hover:bg-[#febc05d5]">Add to Cart</button>

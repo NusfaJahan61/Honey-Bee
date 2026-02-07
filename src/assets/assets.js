@@ -13,6 +13,8 @@ import BeeKeepers from './BeeKeepers.jpg'
 import beeKeeping from './beeKeeping.jpg'
 import honeyComb from './honeyComb.jpg'
 import honeyDrop from './honeyDrop.jpg'
+import app_store from './app_store.png'
+import play_store from './play_store.png'
 
 // Nuts image:
 import nuts1 from './nuts1.jpg'
@@ -83,6 +85,8 @@ export const assets = {
   honeyComb,
   beeKeeping,
   honeyDrop,
+  app_store,
+  play_store,
 }
 
 export const category_list = [

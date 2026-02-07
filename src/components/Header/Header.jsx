@@ -2,7 +2,7 @@ import { assets } from '../../assets/assets'
 
 const Header = () => {
   return (
-    <div className='bg-[#F3F0E9] w-full h-[700px] text-amber-950 rounded-2xl flex justify-around'>
+    <div className='bg-[#F3F0E9] w-full h-175 text-amber-950 rounded-2xl flex justify-around'>
       <div className="mt-[14%] ml-[7%]">
         <h1 className='w-[90%] text-8xl mb-5'>Buy the Best & Fresh Honey</h1>
         <p className='w-[80%] text-[18px] mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum sapiente ad nihil fugiat reiciendis consequuntur illum iusto ab dolor. Rerum, eligendi quae, laboriosam asperiores doloribus delectus cupiditate quod adipisci dicta exercitationem mollitia ratione magnam.</p>
