@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({ setShowLogin, setShowContact }) => {
 
-  const { nav, setNav } = useContext(StoreContext)
+  const { nav, setNav, getTotalCartAmount } = useContext(StoreContext)
 
   return (
     <div className='h-20 flex items-center justify-between p-8 '>
@@ -37,6 +37,7 @@ const Navbar = ({ setShowLogin, setShowContact }) => {
           onClick={() => { setNav("Cart") }}
           className={`text-4xl transition duration-300 
           ${nav === "Cart" ? "text-amber-500 " : "text-gray-600"}`} >
+          {getTotalCartAmount() === 0 ? "" : <img src={assets.bee} className='size-7 -mb-7 ml-7 animate-bounce ' />}
           <IoCartOutline />
         </div></Link>
         <Link to='/account'><div

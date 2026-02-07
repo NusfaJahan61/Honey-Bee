@@ -13,7 +13,7 @@ const StoreContextProvider = (props) => {
 
   const [cartsItem, setCartsItem] = useState({})
 
-  const addToCart = (itemId) => {
+  const addToCart = (itemId) => {               // addToCart
     if (!cartsItem[itemId]) {
       setCartsItem((prev) => ({ ...prev, [itemId]: 1 }))
     }
@@ -22,8 +22,19 @@ const StoreContextProvider = (props) => {
     }
   }
 
-  const removeFromCart = (itemId) => {
+  const removeFromCart = (itemId) => {        // removeFromCart
     setCartsItem((prev) => ({ ...prev, [itemId]: prev[itemId] -= 1 }))
+  }
+
+  const getTotalCartAmount = () => {          // getTotalCartAmount
+    let totalAmount = 0;
+    for (const item in cartsItem) {
+      if (cartsItem[item] > 0) {
+        let itemInfo = item_list.find((product) => product.id === item)
+        totalAmount += itemInfo.price * cartsItem[item]
+      }
+    }
+    return totalAmount;
   }
 
   function disableScroll() {
@@ -33,10 +44,7 @@ const StoreContextProvider = (props) => {
     document.body.classList.remove("no-scroll");
   }
 
-  const totalCartAmount = () => {
-    const total = 0
 
-  }
 
 
 
@@ -46,6 +54,7 @@ const StoreContextProvider = (props) => {
     removeFromCart,
     disableScroll,
     enableScroll,
+    getTotalCartAmount,
 
     // States
     nav,

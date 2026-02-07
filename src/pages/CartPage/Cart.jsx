@@ -7,7 +7,7 @@ import Checkout from "../../components/Checkout/Checkout";
 
 const Cart = () => {
 
-  const { cartsItem, addToCart, removeFromCart, checkout, setCheckout } = useContext(StoreContext)
+  const { cartsItem, addToCart, removeFromCart, checkout, setCheckout, getTotalCartAmount } = useContext(StoreContext)
 
   return (
     <div className=" w-full h-full my-30 text-[18px] font-medium">
@@ -42,7 +42,7 @@ const Cart = () => {
                         <img onClick={() => addToCart(item.id)} className="size-6 cursor-pointer" src={assets.add_icon_green} alt="add" />
                       </div>
                       <p>{item.price * cartsItem[item.id]}/-</p>
-                      <div onClick={() => removeFromCart()} className="m-auto text-[20px] cursor-pointer">
+                      <div onClick={() => removeFromCart(item.id)} className="m-auto text-[20px] cursor-pointer">
                         <MdDelete />
                       </div>
                       <hr className="col-span-6 text-[#c2c2be]" />
@@ -63,20 +63,20 @@ const Cart = () => {
             <div className="flex flex-col gap-3">
               <div className="flex justify-between text-[18px]">
                 <p>Sub Total</p>
-                <p>1234/-</p>
+                <p>{getTotalCartAmount()}</p>
               </div>
               <div className="flex justify-between text-[18px]">
                 <p>Discount</p>
-                <p>100/-</p>
+                <p>3%</p>
               </div>
               <div className="flex justify-between text-[18px]">
                 <p>Delivery fee</p>
-                <p>120/-</p>
+                <p>{getTotalCartAmount() == 0 ? 0 : "৳ 80"}</p>
               </div>
               <hr className="text-[#c2c2be]" />
               <div className="flex justify-between font-medium text-[18px] ">
                 <p>Total</p>
-                <p className="text-2xl ">1265/-</p>
+                <p className="text-2xl ">{getTotalCartAmount() == 0 ? 0 : getTotalCartAmount() + 80}৳</p>
               </div>
             </div>
             <button onClick={() => setCheckout(true)} className="w-full my-5 px-5 py-2 border rounded-[25px] bg-black text-white text-[18px]  cursor-pointer hover:bg-[#303030]">Proceed to checkout</button>

@@ -23,7 +23,7 @@ const ItemsCard = ({ id, name, img, price }) => {
           <FaRegStar className="text-[#FFB900]" />
         </div>
         <div className="px-1 flex justify-between items-center ">
-          <p className="text-[19px] text-[#62625e]">৳  {price}.00</p>
+          <p className="text-[19px] text-[#62625e]">৳  {price}</p>
           {
             !cartsItem[id]
               ? <button onClick={() => addToCart(id)} className="cursor-pointer bg-[#f7d31e] text-[20px] text-center p-3 rounded-[50px]"><IoCartOutline /></button>
