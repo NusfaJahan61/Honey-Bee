@@ -25,12 +25,7 @@ function App() {
       {showLogin === true
         ? <Login setShowLogin={setShowLogin} />
         : <></>
-      }
-      {/* {showContact === true
-        ? <Contact setShowContact={setShowContact} />
-        : <></>
-      } */}
-      {
+      }{
         checkout === true ?
           <Checkout /> : <></>
       }
