@@ -2,7 +2,7 @@ import { assets } from "../../assets/assets"
 
 const AboutPage = () => {
   return (
-    <div className="bg-white py-28">
+    <div className="bg-white py-28 mt-20">
       <div className=" mx-auto px-6">
 
         {/* <!-- Our Story --> */}
