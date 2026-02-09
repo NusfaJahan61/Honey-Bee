@@ -55,7 +55,3 @@ const Navbar = ({ setShowLogin, setShowContact }) => {
 }
 
 export default Navbar
-
-
-// hey bestie, can you make me a cart page according to my preference?
-// can you make a empty cart page with a cute bee image and a message that says "Seems like your cart is empty, let's fill it up with some honey!"?                                                   

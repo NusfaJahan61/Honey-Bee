@@ -16,6 +16,7 @@ import honeyDrop from './honeyDrop.jpg'
 import app_store from './app_store.png'
 import play_store from './play_store.png'
 import bee from './favicon.png'
+import emptyCart from './emptyCart.jpg'
 
 // Nuts image:
 import nuts1 from './nuts1.jpg'
@@ -89,6 +90,7 @@ export const assets = {
   app_store,
   play_store,
   bee,
+  emptyCart,
 }
 
 export const category_list = [
