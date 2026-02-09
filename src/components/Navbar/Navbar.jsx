@@ -36,9 +36,9 @@ const Navbar = ({ setShowLogin, setShowContact }) => {
         <div className="login flex items-center gap-5 align-center justify-center *:cursor-pointer">
           <Link to='/cart'><div
             onClick={() => { setNav("Cart") }}
-            className={`text-4xl transition duration-300 
+            className={`text-4xl transition duration-300 w-13.5
           ${nav === "Cart" ? "text-amber-500 " : "text-gray-600"}`} >
-            {getTotalCartAmount() === 0 ? "" : <img src={assets.bee} className='size-7 -mb-6.5 ml-6.5 animate-bounce ' />}
+            {getTotalCartAmount() === 0 ? "" : <img src={assets.bee} className='size-7 -mb-6.5 ml-6.5 animate-bounce' />}
             <IoCartOutline />
           </div></Link>
           <Link to='/account'><div

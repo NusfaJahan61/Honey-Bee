@@ -13,6 +13,7 @@ import { item_list } from './assets/assets'
 import AlertMsg from './components/AlertMsg/AlertMsg'
 import Products from './pages/Products/Products'
 import Account from './pages/Account/Account'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
 
@@ -29,8 +30,8 @@ function App() {
         checkout === true ?
           <Checkout /> : <></>
       }
+      <Navbar setShowLogin={setShowLogin} setShowContact={setShowContact} />
       <div className="w-[80%] m-auto mb-10">
-        <Navbar setShowLogin={setShowLogin} setShowContact={setShowContact} />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
@@ -40,7 +41,7 @@ function App() {
           <Route path='/account' element={<Account />} />
         </Routes>
       </div>
-
+      <ScrollToTop />
       <Footer />
     </>
   )
