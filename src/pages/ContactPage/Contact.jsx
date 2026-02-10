@@ -29,14 +29,14 @@ const Contact = ({ setShowContact }) => {
           <div className="
             flex flex-col gap-0.5">
             <p className="text-[#5b5955] text-[16px] font-600">Follow us:</p>
-            <div className="flex text-4xl gap-2 cursor-pointer mt-2">
-              <a className="text-[#1877F2]" target="_blank" href="https://www.facebook.com/">
+            <div className="flex text-4xl gap-3 cursor-pointer mt-2">
+              <a target="_blank" href="https://www.facebook.com/">
                 <FaFacebook />
               </a>
-              <a className="text-[#25D366]" target="_blank" href='https://whatsapp.com/'>
+              <a target="_blank" href='https://whatsapp.com/'>
                 <IoLogoWhatsapp />
               </a>
-              <a className="text-[#0088CC]" target="_blank" href="https://telegram.com/">
+              <a target="_blank" href="https://telegram.com/">
                 <FaTelegram />
               </a>
             </div>
