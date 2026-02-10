@@ -5,7 +5,7 @@ import { FaTelegram } from "react-icons/fa";
 const Contact = ({ setShowContact }) => {
 
   return (
-    <div className="flex m-auto mt-26 bg-[#FFFFFF] p-10 rounded-2xl justify-between" >
+    <div className="flex m-auto mt-26 bg-[#FFFFFF] p-10 rounded-2xl justify-between page-out" >
       <div className="w-1/2 ml-10 my-10">
         <h1 className="text-7xl pb-5">Get in Touch</h1>
         <p className="text-gray-600 leading-relaxed mb-10 max-w-md">

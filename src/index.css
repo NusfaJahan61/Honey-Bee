@@ -20,6 +20,10 @@
   .amount-btn {
     @apply h-10 w-25 border-1 border-[#847975] text-[18px] rounded-[10px] flex justify-center items-center cursor-pointer hover:border-amber-400 hover:bg-amber-400 transition duration-400;
   }
+
+  .header-btn {
+    @apply cursor-pointer rounded-[25px] border border-amber-950 bg-amber-950 outline-0 text-[#F3F0E9] py-2 px-5 text-[20px] transition duration-300 hover:text-amber-950 hover:bg-transparent;
+  }
 }
 
 * {
@@ -50,4 +54,24 @@
 .scrollbar {
   overflow: scroll;
   scrollbar-width: none;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.page-out {
+  animation: fadeIn 0.5s ease-out forwards;
 }

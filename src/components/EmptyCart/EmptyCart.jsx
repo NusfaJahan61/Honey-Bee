@@ -8,7 +8,7 @@ const EmptyCart = () => {
   const { setNav } = useContext(StoreContext)
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-10">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-10 page-out">
       <img className='size-100' src={assets.emptyCart} alt="emptycart" />
       <h1 className='text-3xl text-gray-700 font-semibold mb-5 ' >Seems like your Cart is Empty! </h1>
       <p className="text-gray-600 text-lg leading-relaxed mb-8 px-2">

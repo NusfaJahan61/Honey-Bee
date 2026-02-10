@@ -10,7 +10,7 @@ const Login = ({ setShowLogin }) => {
   disableScroll();
 
   return (
-    <div className="modal-overlay">
+    <div className="modal-overlay backdrop-blur-sm page-out">
       <form className={`bg-[#F3F0E9] w-[30%] ${currState === "Sign up" ? 'h-[55%]' : "h-[50%]"} m-auto mt-[10%] p-10 rounded-2xl`} action="">
         <img className="ml-[95%] cursor-pointer" onClick={() => { setShowLogin(false); enableScroll() }} src={assets.cross_icon} alt="cross" />
         <h1 className="text-3xl text-amber-950 text-center">{currState}</h1>

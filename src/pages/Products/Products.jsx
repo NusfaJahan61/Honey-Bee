@@ -4,7 +4,7 @@ import ShowProducts from '../ShowProductsPage/ShowProducts'
 
 const Products = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-20 page-out'>
       <Category />
       <ShowProducts />
     </div>

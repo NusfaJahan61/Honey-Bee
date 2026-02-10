@@ -33,7 +33,7 @@ const Navbar = ({ setShowLogin, setShowContact }) => {
               " border-b-2 text-amber-500 transition duration-300" : ""}>Contact us</li></Link>
           </ul>
         </div>
-        <div className="login flex items-center gap-5 align-center justify-center *:cursor-pointer">
+        <div className="login flex items-center align-center justify-center *:cursor-pointer">
           <Link to='/cart'><div
             onClick={() => { setNav("Cart") }}
             className={`text-4xl transition duration-300 w-13.5
@@ -43,7 +43,7 @@ const Navbar = ({ setShowLogin, setShowContact }) => {
           </div></Link>
           <Link to='/account'><div
             onClick={() => setNav("Account")}
-            className={`text-3xl transition duration-300 
+            className={`ml-1 mr-6 text-3xl transition duration-300 
           ${nav === "Account" ? "text-amber-500 " : "text-gray-600"}`} >
             <VscAccount />
           </div></Link>

@@ -34,10 +34,10 @@ function App() {
       <div className="w-[80%] m-auto mb-10">
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/about_us' element={<AboutPage />} />
-          <Route path='/contact_us' element={<Contact setShowContact={setShowContact} />} />
           <Route path='/products' element={<Products />} />
+          <Route path='/about_us' element={<AboutPage />} />
+          <Route path='/contact_us' element={<Contact />} />
+          <Route path='/cart' element={<Cart />} />
           <Route path='/account' element={<Account />} />
         </Routes>
       </div>

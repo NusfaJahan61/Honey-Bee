@@ -12,7 +12,7 @@ const Cart = () => {
   return (
     <div>
       {getTotalCartAmount() == 0 ? <EmptyCart /> :
-        <div className=" w-full h-full my-30 text-[18px] font-medium mt-40">
+        <div className=" w-full h-full my-30 text-[18px] font-medium mt-40 page-out">
           <h1 className="text-5xl mb-10 flex gap-5 items-center">
             <div className="text-7xl">
               <IoCartOutline />

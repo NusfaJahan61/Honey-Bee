@@ -14,13 +14,13 @@ const Description = () => {
   disableScroll();
 
   return (
-    <div>
+    <div className="page-out">
       {
         item_list.map((item, index) => {
           if (description === item.name) {
             return (
               <div className="modal-overlay backdrop-blur-sm" key={index}>
-                <div className="modal-content">
+                <div className="modal-content mt-45">
                   <img className="flex ml-[97%] justify-end cursor-pointer" onClick={() => { setDescription(""); setShowDesc(false); enableScroll() }} src={assets.cross_icon} alt="close" />
                   <div className="flex gap-5 justify-between">
                     <div className="flex-col w-1/2 gap-5">
