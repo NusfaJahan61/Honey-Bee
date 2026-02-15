@@ -9,19 +9,19 @@ import { StoreContext } from "../../StoreContext/StoreContext";
 const Footer = () => {
   const { setNav } = useContext(StoreContext)
   return (
-    <div id="footer" className=" capitalize bg-[#D69604] flex flex-col  h-120 *:text-black  sm:grid-rows-3 sm:gap-3">
+    <div id="footer" className=" capitalize bg-[#D69604] flex flex-col h-120 *:text-black  sm:grid-rows-3 sm:gap-3">
       <div className="w-3/4 m-auto mb-10 mt-20 flex justify-between sm:grid-rows-2 sm:gap-5">
         <div className="">
           <Link to='/'><img onClick={() => setNav("Home")} className="w-40 " src={assets.logo} alt="" /></Link>
-          <Link to='/contact_us'><button onClick={() => setNav("Contact us")} className=" px-9 py-2 text-zinc-900 rounded-md my-4 border border-black hover:border-transparent hover:bg-amber-300 active:bg-[#f5df1d] bg-transparent  duration-400 hover:cursor-pointer">send email</button></Link>
+          <Link to='/contact_us'><button onClick={() => setNav("Contact us")} className="text-[max(16px)] px-9 py-2 text-zinc-900 rounded-md my-4 border border-black hover:border-transparent hover:bg-amber-300 active:bg-[#f5df1d] bg-transparent  duration-400 hover:cursor-pointer">Send email</button></Link>
           <div className="flex pt-5 gap-5 *:text-4xl *:hover:cursor-pointer">
             <a target="_blank" href="https://www.facebook.com/"><FaFacebook /></a>
             <a target="_blank" href="https://whatsapp.com/"><IoLogoWhatsapp /></a>
             <a target="_blank" href="https://telegram.com/"><FaTelegram /></a>
           </div>
         </div>
-        <div className="flex gap-10 mt-5" >
-          <div className="w-60 flex flex-col gap-5 ">
+        <div className="flex gap-5 mt-5" >
+          <div className="w-60 flex flex-col gap-5 mr-10">
             <Link to='/contact_us' ><h1 onClick={() => setNav("Contact us")} className="font-bold uppercase text-[18px] tracking-widest hover:cursor-pointer">contact us</h1></Link>
             <p className="text-[15px]">DFO Office, Sundarbans East Forest Division, Khulna, Bangladesh
             </p>
