@@ -14,6 +14,7 @@ import AlertMsg from './components/AlertMsg/AlertMsg'
 import Products from './pages/Products/Products'
 import Account from './pages/Account/Account'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import NotFound from './components/NotFound/NotFound'
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           <Route path='/contact_us' element={<Contact />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/account' element={<Account />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
       <ScrollToTop />
