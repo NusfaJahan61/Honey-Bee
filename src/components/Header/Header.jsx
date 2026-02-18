@@ -8,7 +8,7 @@ const Header = () => {
   const { setNav } = useContext(StoreContext)
 
   return (
-    <div className='bg-[#F3F0E9] w-full min-h-175 text-amber-950 rounded-2xl flex justify-around mt-24 shadow-sm flex-col-reverse lg:flex-row items-center lg:justify-between  lg:mt-24 px-5 lg:px-14 py-10'>
+    <div className='bg-[#F3F0E9] w-full min-h-175 text-amber-950 rounded-2xl flex justify-around mt-24 shadow-sm flex-col-reverse '>
 
       <div className="mt-[10%] ml-[7%]">
         <h1 className='w-[90%] text-8xl mb-5'>Buy the Best & Fresh Honey</h1>

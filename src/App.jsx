@@ -32,7 +32,7 @@ function App() {
           <Checkout /> : <></>
       }
       <Navbar setShowLogin={setShowLogin} setShowContact={setShowContact} />
-      <div className="w-[80%] m-auto mb-10">
+      <div className="w-full md:w-[90%] xl:w-[80%] m-auto mb-10">
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/products' element={<Products />} />
